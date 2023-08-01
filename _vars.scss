@@ -1,6 +1,6 @@
 // Variables:
 // --colors
-$primary-color:blue;
+$primary-color:rgb(113, 104, 104);
 $secondary-color:orange;
 $heading-color:#fff;
 $links-color:$heading-color;
@@ -8,3 +8,16 @@ $sub-heading-color:#f4f4f4;
 $body-color:#f4f4f4;
 //--fonts
 $body-font: Helvetica, sans-serif;
+//functions => Set text color based on background
+@function text-color($color){
+       @if(lightness($color)>70){
+              @return #333;
+       }@else{
+              @return #fff;
+       }
+}
+// set background and text based on primary color
+@mixin primary-theme($color){
+       background-color:$color;
+       color:text-color($color);
+}

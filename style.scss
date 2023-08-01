@@ -4,8 +4,10 @@
 @import "buttons";
 
 .showcase{
-       background-color: $primary-color;
+       @include primary-theme($primary-color);
+       /* background-color: $primary-color;
        color: $heading-color;
+       color:text-color($primary-color); */
        height: 600px;
        padding: 10px 25px;
        nav{

@@ -32,7 +32,7 @@ a:hover {
 }
 
 .btn-primary {
-  background-color: #3333ff;
+  background-color: #8b8181;
 }
 
 .btn-secondary {
@@ -40,8 +40,11 @@ a:hover {
 }
 
 .showcase {
-  background-color: blue;
+  background-color: rgb(113, 104, 104);
   color: #fff;
+  /* background-color: $primary-color;
+  color: $heading-color;
+  color:text-color($primary-color); */
   height: 600px;
   padding: 10px 25px;
 }
